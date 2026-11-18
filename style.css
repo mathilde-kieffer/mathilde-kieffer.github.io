@@ -1,3 +1,16 @@
 body{
-    background: red;
+    background: rgb(255, 255, 255);
+    color: rgb(165, 42, 61);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1,p{
+    text-align: center;
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+}
+header{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content:space-between;
 }
