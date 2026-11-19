@@ -1,16 +1,47 @@
-body{
-    background: rgb(255, 255, 255);
-    color: rgb(165, 42, 61);
-    font-family: Arial, Helvetica, sans-serif;
-}
-h1,p{
-    text-align: center;
-}
-h1{
-    font-family: 'Courier New', Courier, monospace;
-}
 header{
     display: grid;
     grid-template-columns: auto auto;
-    justify-content:space-between;
+    align-items: center;
+}
+
+.headergrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+  
+}
+
+body{
+    background: rgb(255, 255, 255);
+    color: black;
+    margin:0 auto;
+    padding: 5px;
+}
+p{
+    text-align: left;
+    font-size: 40px;
+
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: black;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-size: 100px;
+    color: black;
+}
+
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    gap: 24px;
+
+}
+span{
+    text-align: right;
 }
