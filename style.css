@@ -1,7 +1,9 @@
 header{
-    display: grid;
+    background-color: white;
     grid-template-columns: auto auto;
     align-items: center;
+    border-bottom: 1px solid black;
+    padding: 5px;
 }
 
 .headergrid{
@@ -10,6 +12,13 @@ header{
     justify-content: space-between;
   
 }
+
+.logo{
+    width: 60px;
+    height: 60px;
+}
+
+
 
 body{
     background: rgb(255, 255, 255);
@@ -20,17 +29,19 @@ body{
 p{
     text-align: left;
     font-size: 40px;
+    font-family: 'gambetta';
 
 }
 h1{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'general-sans';
     text-align: center;
     color: black;
+    font-size: 25px;
 }
 h2{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'gambetta';
     text-align: left;
-    font-size: 100px;
+    font-size: 50px;
     color: black;
 }
 
@@ -44,4 +55,26 @@ h2{
 }
 span{
     text-align: right;
+    font-family: 'gambetta-italic';
+    font-size: 25px;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@font-face {
+    font-family: 'general-sans';
+    src: url('fonts/GeneralSans-Bold.woff');
+}
+
+@font-face {
+    font-family: 'gambetta';
+    src: url('fonts/Gambetta-Medium.woff');
+}
+@font-face {
+    font-family: 'gambetta-italic';
+    src: url('fonts/Gambetta-MediumItalic.woff');
 }
