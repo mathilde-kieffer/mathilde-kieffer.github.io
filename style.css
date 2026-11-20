@@ -4,6 +4,9 @@ header{
     align-items: center;
     border-bottom: 1px solid black;
     padding: 5px;
+    position: sticky;
+    z-index: 999;
+    top: 0%;
 }
 
 .headergrid{
@@ -19,6 +22,70 @@ header{
 }
 
 
+.button{
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: 0.5s background;
+}
+
+.button:hover{
+    background-color: black;
+    color: white;
+}
+
+.item-grid{
+    display: grid;
+    text-decoration: none;
+}
+
+.item-grid img,
+.item-grid h3{
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+}
+
+.item-grid h3{
+    color:#fff;
+    background: rgba(0, 0, 0, 0.805);
+    margin: 0;
+    opacity:0;
+    transition: .4s;
+    display: grid;
+    align-items:center;
+    justify-items: center;
+}
+.item-grid:hover h3{
+    opacity:1;
+}
+
+.item-grid img{
+    object-fit: cover;
+    height:100%;
+}
+
+.title{
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    font-family: 'gambetta-italic';
+    text-align: left;
+    font-size: 25px;
+    padding: 7px 12px;
+    padding-right: ;
+    border-radius: 50px;
+    margin-top: 1px;
+    margin-bottom: 20px;
+
+}
+
+main{
+    padding: 40px;
+}
 
 body{
     background: rgb(255, 255, 255);
@@ -28,8 +95,12 @@ body{
 }
 p{
     text-align: left;
-    font-size: 40px;
+    font-size: 20px;
     font-family: 'gambetta';
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 70px;
+    
 
 }
 h1{
@@ -39,10 +110,29 @@ h1{
     font-size: 25px;
 }
 h2{
-    font-family: 'gambetta';
+    font-family: 'general-sans';
     text-align: left;
     font-size: 50px;
     color: black;
+    
+    margin-top: 20px;
+    margin-bottom: 1px;
+    margin-right: 40px;
+}
+
+h3{
+    font-family: 'gambetta-italic';
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    
+}
+
+h4{
+    font-family: 'gambetta-italic';
+    text-align: center;
+    font-size: 25px;
+    color: white;
 }
 
 
@@ -50,7 +140,8 @@ h2{
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
-    gap: 24px;
+    gap: 5px;
+    margin-top: 10px;
 
 }
 span{
@@ -64,6 +155,14 @@ img{
     height: auto;
     display: block;
 }
+
+.gridproject{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+
 
 @font-face {
     font-family: 'general-sans';
