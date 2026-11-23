@@ -89,6 +89,15 @@ footer{
     color: white;
 }
 
+@media (max-width:875px) {
+    .button{
+        padding: 7px 12px;
+        font-size: 15px;
+        display:inline-block;
+    }
+}
+
+
 .buttonapropos{
     background-color: white;
     color: black;
@@ -100,6 +109,8 @@ footer{
     text-align: left;
     font-size: 25px;
     transition: 0.5s background;
+    display: inline-block;
+    margin-top: 5px;
 
 }
 
@@ -108,6 +119,14 @@ footer{
     color: white;
 }
 
+@media (max-width:1000px) {
+    .buttonapropos{
+        margin-top: 5px;
+        padding: 7px 12px;
+        font-size: 20px;
+        display:inline-block;
+    }
+}
 
 
 
