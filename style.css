@@ -1,3 +1,7 @@
+a{
+    color:currentColor;
+}
+
 header{
     background-color: white;
     grid-template-columns: auto auto;
@@ -15,6 +19,54 @@ header{
     justify-content: space-between;
   
 }
+
+footer{
+    background-color: white;
+    grid-template-columns: auto auto;
+    align-items: center;
+    border-top: 1px solid black;
+    padding: 5px;
+    position: sticky;
+    height: 50px;
+    font-family: 'gambetta-italic';
+    font-size: 15px;
+
+}
+
+.footergrid{
+    text-align: center;
+
+}
+
+.projectbutton{
+    font-size: 20px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+
+    padding: 10px 15px;
+    border-radius: 50px;
+    transition: 0.5s background;
+
+}
+.projectbutton:hover{
+    background-color: black;
+    color: white;
+}
+
+.left{
+    margin-top: 5px;
+    display: inline-block;
+    text-align: left;
+}
+
+.right{
+    margin-top: 5px;
+    display: inline-block;
+    text-align: right;
+}
+
 
 .logo{
     width: 60px;
@@ -36,6 +88,28 @@ header{
     background-color: black;
     color: white;
 }
+
+.buttonapropos{
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 7px 12px;
+    border-radius: 50px;
+    font-family: 'gambetta-italic';
+    text-align: left;
+    font-size: 25px;
+    transition: 0.5s background;
+
+}
+
+.buttonapropos:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
 
 .item-grid{
     display: grid;
@@ -76,7 +150,6 @@ header{
     text-align: left;
     font-size: 25px;
     padding: 7px 12px;
-    padding-right: ;
     border-radius: 50px;
     margin-top: 1px;
     margin-bottom: 20px;
@@ -84,7 +157,14 @@ header{
 }
 
 main{
-    padding: 40px;
+    padding: 10px;
+    min-height:calc(100vh - 230px);
+}
+
+@media (min-width:900px) {
+    main{
+        padding: 40px;
+    }
 }
 
 body{
@@ -98,11 +178,15 @@ p{
     font-size: 20px;
     font-family: 'gambetta';
     margin-top: 30px;
-    margin-bottom: 30px;
-    margin-right: 70px;
-    
+    margin-bottom: 5px;   
 
 }
+@media (min-width:700px) {
+    p{
+        margin-right: 70px;
+    }
+}
+
 h1{
     font-family: 'general-sans';
     text-align: center;
@@ -114,9 +198,9 @@ h2{
     text-align: left;
     font-size: 50px;
     color: black;
-    
+    text-transform: uppercase;
     margin-top: 20px;
-    margin-bottom: 1px;
+    margin-bottom: 10px;
     margin-right: 40px;
 }
 
@@ -136,19 +220,34 @@ h4{
 }
 
 
+
+
 .grid{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr ;
     justify-content: space-between;
     gap: 5px;
-    margin-top: 10px;
+    margin-top: 5px;
 
 }
+
+@media (min-width:900px) {
+    .grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+
 span{
     text-align: right;
     font-family: 'gambetta-italic';
     font-size: 25px;
 }
+
+
+
+
 
 img{
     width: 100%;
@@ -161,6 +260,7 @@ img{
     grid-template-columns: 1fr 1fr 1fr;
     gap: 5px;
     margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 
