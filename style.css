@@ -21,6 +21,13 @@ header{
   
 }
 
+
+.logo{
+    width: 60px;
+    height: 60px;
+}
+
+
 footer{
     background-color: white;
     grid-template-columns: auto auto;
@@ -95,10 +102,6 @@ footer{
 }
 
 
-.logo{
-    width: 60px;
-    height: 60px;
-}
 
 
 .button{
@@ -313,14 +316,18 @@ img{
 
 @font-face {
     font-family: 'general-sans';
+    font-weight: bold;
     src: url('fonts/GeneralSans-Bold.woff');
 }
 
 @font-face {
     font-family: 'gambetta';
+    font-weight: medium;
     src: url('fonts/Gambetta-Medium.woff');
 }
 @font-face {
     font-family: 'gambetta-italic';
+    font-weight: medium;
+    font-style: italic;
     src: url('fonts/Gambetta-MediumItalic.woff');
 }
