@@ -47,6 +47,14 @@ footer{
 
 }
 
+@media (max-width:500px) {
+    footer{
+        
+        font-size: 10px;
+    }
+}
+
+
 .projectbuttongrid{
     display: grid;
     grid-template-columns: 1fr 1fr;
