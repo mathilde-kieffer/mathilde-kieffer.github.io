@@ -55,6 +55,15 @@ footer{
     color: white;
 }
 
+@media (max-width:500px) {
+    .projectbutton{
+        padding: 7px 12px;
+        font-size: 15px;
+        display: ?;
+
+    }
+}
+
 .left{
     margin-top: 5px;
     display: inline-block;
